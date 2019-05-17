@@ -1,5 +1,5 @@
 
-Please note this project is in WIP
+Please note this project is in WIP and is being constantly updated so may not work as expected. 
 
 ## Table of contents
 * [General info](#general-info)
@@ -24,16 +24,6 @@ docker exec cli peer chaincode install -n letter10 -v 1.0 -l golang -p github.co
 
 2) Instantiate the chaincode
 docker exec cli peer chaincode instantiate -o orderer.example.com:7050 --tls true --cafile /opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/ordererOrganizations/example.com/orderers/orderer.example.com/msp/tlscacerts/tlsca.example.com-cert.pem -C mychannel -n letter10 -l golang -v 1.0 -c '{"Args":["init","a","100","b","200"]}' -P 'AND ('\''Org1MSP.peer'\'','\''Org2MSP.peer'\'')'
-
-3) Invoke the Letter Publish method
-
-docker exec cli peer chaincode invoke -o orderer.example.com:7050 --tls true --cafile /opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/ordererOrganizations/example.com/orderers/orderer.example.com/msp/tlscacerts/tlsca.example.com-cert.pem -C mychannel -n letter10  -c '{"Function": "proposeLetterOfGurantee", "Args": ["001", "cust001", "22ndjan2018","22ndjan2019", "cust001", "100","doc", "status","comm"]}'
-
-4) Invoke the Query
-
-peer chaincode query -C mychannel -n letter10 -c '{"Args":["viewLetterOfGurantee","BankLetter001cust001"]}'
-
-Please note this project is in WIP
 
 
 
