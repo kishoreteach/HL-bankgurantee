@@ -1,6 +1,10 @@
 
 Please note this project is in WIP and is being constantly updated so may not work as expected. 
 
+#To DO --> currently working on follwoing
+ 1) finalizing the smart contract code
+ 2) Develop UI to invoke smart contract
+
 ## Table of contents
 * [General info](#general-info)
 * [Setup](#setup)
