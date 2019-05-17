@@ -21,6 +21,7 @@ const (
 	CANCEL		= "CANCEL"
 	ACCEPTED	= "ACCEPTED"	
 	REDEEM		= "REDEEM"
+	COUNTER		= "COUNTER"
 	
 
 )
